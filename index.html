@@ -11,12 +11,42 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=latin-ext"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="content">
-      <h1>Temperatura w Toruniu: <span class="temp-torun"> </span> &#176;C</h1>
-      <h1>Temperatura w Płocku: <span class="temp-plock"> </span> &#176;C</h1>
+      <nav>
+        <div class="nav">
+          <h1>WeatherApp</h1>
+        </div>
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      </nav>
+      <main>
+        <div>
+          <h1>
+            Temperatura w Toruniu: <span class="temp-torun"> </span> &#176;C
+          </h1>
+          <img src="./torun.jpg" alt="Zdjecie Torunia" />
+        </div>
+        <div>
+          <h1>
+            Temperatura w Płocku: <span class="temp-plock"> </span> &#176;C
+          </h1>
+          <img src="./plock.jpg" alt="Zdjecie Płocka" />
+        </div>
+      </main>
+      <footer>
+        <div>
+          <h6 style="display: inline-block;">KONTAKT:</h6>
+          <p style="display: inline-block;">wiktorzielak@gmail.com</p>
+        </div>
+      </footer>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

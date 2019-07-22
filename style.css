@@ -1,8 +1,40 @@
 .content {
-  background: linear-gradient(45deg, #b3c6ff, #4d79ff, #00061a) no-repeat;
-  font-family: sans-serif;
+  background-image: url("./background.jpg");
+  font-family: "Pacifico", cursive;
   max-width: 100%;
   height: 100vh;
   margin: 0 auto;
+  padding: 0;
+}
+
+nav {
+  text-align: left;
+}
+
+.nav {
+  margin: 0 0 0 45%;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+main {
+  padding: 50px;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+img {
+  max-width: 70%;
+}
+
+footer {
+  text-align: center;
+}
+
+.spinner-border {
+  display: none;
+  margin: 0;
   padding: 0;
 }

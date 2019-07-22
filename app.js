@@ -1,8 +1,9 @@
-setInterval(() => {
+function wyznaczTemperature() {
   let data_torun = {};
   let data_plock = {};
   const temp_torun = document.querySelector(".temp-torun");
   const temp_plock = document.querySelector(".temp-plock");
+  const spinnerBorder = document.querySelector(".spinner-border");
 
   // Toruń
   fetch(
@@ -15,8 +16,9 @@ setInterval(() => {
       data_torun = data;
     })
     .then(() => {
-      temp_torun.textContent = Math.round(data_torun.main.temp - 272.15);
-      console.log("Toruń: ", Math.round(data_torun.main.temp - 272.15));
+      let temp = Math.round((data_torun.main.temp - 272.15) * 100) / 100;
+      temp_torun.textContent = temp;
+      console.log("Toruń: ", temp);
     });
 
   // Płock
@@ -30,7 +32,16 @@ setInterval(() => {
       data_plock = data;
     })
     .then(() => {
-      temp_plock.textContent = Math.round(data_plock.main.temp - 272.15);
-      console.log("Płock: ", Math.round(data_plock.main.temp - 272.15));
+      let temp = Math.round((data_plock.main.temp - 272.15) * 100) / 100;
+      temp_plock.textContent = temp;
+      console.log("Płock: ", temp);
+      spinnerBorder.style.display = "inline-block";
+      setTimeout(() => {
+        spinnerBorder.style.display = "none";
+      }, 1000);
     });
-}, 10000);
+}
+
+wyznaczTemperature();
+
+setInterval(wyznaczTemperature, 10000);
