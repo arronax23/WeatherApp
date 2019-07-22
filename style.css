@@ -1,0 +1,8 @@
+.content {
+  background: linear-gradient(45deg, #b3c6ff, #4d79ff, #00061a) no-repeat;
+  font-family: sans-serif;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
