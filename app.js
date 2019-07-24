@@ -7,7 +7,7 @@ function wyznaczTemperature() {
 
   // Toruń
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?id=3083271&APPID=fd781890dff9958ecdd0051bfcfeefa6"
+    "https://api.openweathermap.org/data/2.5/weather?id=3083271&APPID=fd781890dff9958ecdd0051bfcfeefa6"
   )
     .then(resp => {
       return resp.json();
@@ -23,7 +23,7 @@ function wyznaczTemperature() {
 
   // Płock
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?id=3088825&APPID=fd781890dff9958ecdd0051bfcfeefa6"
+    "https://api.openweathermap.org/data/2.5/weather?id=3088825&APPID=fd781890dff9958ecdd0051bfcfeefa6"
   )
     .then(resp => {
       return resp.json();
