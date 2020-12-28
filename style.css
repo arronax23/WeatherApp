@@ -25,8 +25,14 @@ main {
   text-align: center;
 }
 
-img {
+#img-plock {
   max-width: 70%;
+  border-radius: 10%;
+  border: 2px solid black;
+}
+
+#img-torun {
+  max-width: 74.838%;
   border-radius: 10%;
   border: 2px solid black;
 }
@@ -39,4 +45,7 @@ footer {
   display: none;
   margin: 0;
   padding: 0;
+}
+
+span.temp-plock {
 }
